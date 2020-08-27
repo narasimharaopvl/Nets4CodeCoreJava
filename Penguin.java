@@ -1,12 +1,16 @@
 public class Penguin extends Bird implements SwimBehavior
 {
-   public void eat()
+   public void eat(String item)
    {
-	System.out.println("Penguins eats Krill, crabs and fish");
+	System.out.println("Penguins eats "+ item);
    }
    public void sound()
    {
 	System.out.println("Penguins can sneeze");
+   }
+   public void eat()
+   {
+	System.out.println("Penguin eats krill, fish, and squids");
    }
    public void swim()
    {
